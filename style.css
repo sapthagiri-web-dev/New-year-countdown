@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("img/img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  font-family: "Pacifico", cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  overflow: hidden;
+  margin: 0;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+body * {
+  z-index: 1;
+}
+
+h1 {
+  font-size: 60px;
+  margin: -100px 0 100px 0;
+}
+
+.year {
+  font-size: 150px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.year_update {
+  font-size: 180px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.loading {
+  height: 90px;
+  width: 90px;
+}
+
+.countdown {
+  display: none;
+  font-size: 25px;
+}
+
+.happyNewYear {
+  font-size: 70px;
+  color: brown;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.time h2 {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 40px;
+    margin: -150px 0 100px 0;
+  }
+}
